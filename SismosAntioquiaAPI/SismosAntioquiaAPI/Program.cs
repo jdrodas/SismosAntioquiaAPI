@@ -13,6 +13,7 @@ builder.Services.Configure<SismosAntioquiaDatabaseSettings>(
     builder.Configuration.GetSection("SismosAntioquiaDatabase"));
 
 builder.Services.AddSingleton<SismosService>();
+builder.Services.AddSingleton<RegionesService>();
 
 var app = builder.Build();
 
